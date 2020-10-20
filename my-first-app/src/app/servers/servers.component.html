@@ -1,8 +1,40 @@
+<label>Server Name: </label>
+<!-- <input type="text"
+       class="form-control"
+       (input)="onUpdateServerName($event)"> -->
+<input type="text"
+      class="form-control"
+      [(ngModel)]="serverName">
 <button class="btn btn-primary"
         [disabled]="!allowServers"
+        (click)="onCreateServer()"
 >
   Submit Button
 </button>
+
+<p> {{ serverCreateStatus }} </p>
+
+<input type="text"
+      class="form-control"
+      [(ngModel)]="userName">
+<p> {{ userName }} </p>
+<button class="btn btn-primary"
+        [disabled]="userName === ''"
+        (click)="userName = ''"
+>
+Reset Username
+</button>
+
+<p
+  *ngIf="userName == 'Banana'"
+  [ngStyle]="{backgroundColor: setColor()}"
+  [ngClass]="{master: userName == 'Banana'}"
+>
+  Hello Master Banana !!!!!!
+</p>
+
+<hr>
+
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
