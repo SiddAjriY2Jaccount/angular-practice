@@ -1,3 +1,20 @@
+<button class="btn btn-primary"
+        (click)="toggleParaContent()"
+>
+  Display Details
+</button>
+<p> Displaying Details below! </p>
+<p> {{ paraContent }} </p>
+<div *ngFor="let num of paraNumArray"
+   [ngStyle]="{backgroundColor: num >= 5 ? 'lime' : 'red'}"
+   [ngClass]="{post5logs: num >= 5}"
+>
+{{ num }}
+</div>
+
+
+<hr>
+
 <label>Server Name: </label>
 <!-- <input type="text"
        class="form-control"
@@ -35,6 +52,6 @@ Reset Username
 
 <hr>
 
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+
+<hr>
