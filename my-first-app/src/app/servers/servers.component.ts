@@ -16,7 +16,6 @@ export class ServersComponent implements OnInit {
   paraContent: string = 'Displaying details BOOM';
   paraBool: boolean = false;
   paraNumArray = [];
-  paraNum = 0;
 
   constructor() {
     setTimeout(() => {
@@ -41,15 +40,13 @@ export class ServersComponent implements OnInit {
     if (this.paraBool === false) {
       this.paraContent = 'Adam Cole BABAY!';
       this.paraBool = true;
-      this.paraNum = this.paraNum + 1;
-      this.paraNumArray.push(this.paraNum);
+      this.paraNumArray.push(new Date());
     }
 
     else {
       this.paraContent = 'KYLE OREILLY Red Dragon is Back!';
       this.paraBool = false;
-      this.paraNum = this.paraNum + 1;
-      this.paraNumArray.push(this.paraNum);
+      this.paraNumArray.push(new Date());
     }
 
   }

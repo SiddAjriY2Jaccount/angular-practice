@@ -5,9 +5,9 @@
 </button>
 <p> Displaying Details below! </p>
 <p> {{ paraContent }} </p>
-<div *ngFor="let num of paraNumArray"
-   [ngStyle]="{backgroundColor: num >= 5 ? 'lime' : 'red'}"
-   [ngClass]="{post5logs: num >= 5}"
+<div *ngFor="let num of paraNumArray; let i = index"
+   [ngStyle]="{backgroundColor: i >= 5 ? 'lime' : 'red'}"
+   [ngClass]="{post5logs: i >= 5}"
 >
 {{ num }}
 </div>
