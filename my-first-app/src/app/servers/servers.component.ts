@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  allowServers: boolean = false;
-  allowButtonClick: boolean = false;
+  allowServers = false;
+  allowButtonClick = false;
   serverCreateStatus = 'Server was NOT created';
-  serverName: string = '';
+  serverName = '';
   userName: string = '';
   servers = [];
   paraContent: string = 'Displaying details BOOM';
