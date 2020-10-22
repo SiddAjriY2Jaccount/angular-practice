@@ -11,6 +11,7 @@ export class CockpitComponent implements OnInit {
   @Output() blueprintCreated = new EventEmitter<{name: string, content: string}>();
   /* newServerName = '';
   newServerContent = ''; */
+
   @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
 
   constructor() { }

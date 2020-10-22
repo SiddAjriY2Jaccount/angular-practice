@@ -18,4 +18,23 @@
       </p>
     </app-server-element>
   </div>
+
+  <hr>
+  <hr>
+  <hr>
+
+  <div class="row">
+    <app-game-control (intervalEvent)="onGameStarted($event)"></app-game-control>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-odd *ngFor="let oddNum of oddArray" [number]="oddNum"></app-odd>
+    </div>
+    <div class="col-xs-12">
+      <app-even *ngFor="let evenNum of evenArray" [number]="evenNum"></app-even>
+    </div>
+  </div>
+
+
+
 </div>
