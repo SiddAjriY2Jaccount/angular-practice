@@ -31,9 +31,7 @@ export class AppComponent {
     console.log(num);
     if (num % 2 === 0) {
       this.evenArray.push(num);
-    }
-
-    else {
+    } else {
       this.oddArray.push(num);
     }
   }

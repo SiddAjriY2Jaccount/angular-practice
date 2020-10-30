@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
+import { Component, OnInit, Output, ElementRef, EventEmitter, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-cockpit',
@@ -23,14 +23,14 @@ export class CockpitComponent implements OnInit {
     this.serverCreated.emit({
       name: nameInput.value,
       content: this.serverContentInput.nativeElement.value
-    })
+    });
   }
 
   onAddBlueprint(nameInput: HTMLInputElement) {
     this.blueprintCreated.emit({
       name: nameInput.value,
       content: this.serverContentInput.nativeElement.value
-    })
+    });
   }
 
 }
