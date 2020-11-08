@@ -4,9 +4,9 @@ import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
-import { MyModuleModule } from './app/my-module/my-module.module';
+import { FeatureModule } from './app/feature-module/feature-module.module';
 
-platformBrowserDynamic().bootstrapModule(MyModuleModule).then(ref => {
+platformBrowserDynamic().bootstrapModule(FeatureModule).then(ref => {
   // Ensure Angular destroys itself on hot reloads.
   if (window['ngRef']) {
     window['ngRef'].destroy();

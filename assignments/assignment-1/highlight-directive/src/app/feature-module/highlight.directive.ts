@@ -13,7 +13,7 @@ export class HighlightDirective {
   }
 
   @HostListener("mouseenter") onMouseEnter() {
-    this.setBgColor("lime");
+    this.setBgColor("blue");
   }
 
   @HostListener("mouseleave") onMouseLeave() {
