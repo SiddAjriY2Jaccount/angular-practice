@@ -1,0 +1,25 @@
+:host {
+  display: block;
+}
+
+#card-header {
+  height: 50px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: lightcoral;
+}
+
+#card-body {
+  height: 50px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: lime;
+}
+
+#card-footer {
+  height: 50px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: turquoise;
+}
+

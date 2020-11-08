@@ -1,0 +1,29 @@
+<div class="container">
+  <div [@inOut]="isIn1 ? 'in1' : 'out1'">
+    <div class="row">
+      <div class="col text-center">
+        <div class="card" id="card-header">
+          <h1>A</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [@inOut]="isIn2 ? 'in2' : 'out2'">
+    <div class="row">
+      <div class="col text-center">
+        <div class="card" id="card-body">
+          <h1>B</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [@inOut]="isIn3 ? 'in3' : 'out3'">
+    <div class="row">
+      <div class="col text-center">
+        <div class="card" id="card-footer">
+          <h1>C</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
