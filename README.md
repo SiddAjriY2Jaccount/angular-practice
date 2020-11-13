@@ -1,2 +1,2 @@
 # angular-practice
-Practice repo for all apps developed using Angular
+Practice repo for all apps developed using Angular.
